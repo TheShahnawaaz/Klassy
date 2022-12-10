@@ -124,6 +124,10 @@ main .right_scroll:hover {
   font-size: smaller;
   padding-top: 5px;
 }
+.card-description > h1 {
+  font-size: 1.3rem;
+  /* padding-top: 5px; */
+}
 
 .card-description a > p {
   padding: 5px;
