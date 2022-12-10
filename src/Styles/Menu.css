@@ -1,0 +1,220 @@
+/* Services page */
+#menu {
+  background-color: blanchedalmond;
+  height: 100vh;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* overflow: hidden; */
+  position: relative;
+  /* border: 2px solid black; */
+  /* padding: 5%; */
+}
+.roller {
+  display: flex;
+  width: 800px;
+  /* margin: 20px; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+  grid-gap: 0.5rem;
+  /* padding: 2rem; */
+  transition: all;
+  /* border: 2px solid black; */
+
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+.roller .card {
+  position: absolute;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  transition: all 0.5s ease;
+  /* margin: 50px; */
+  /* margin: 20px; */
+  overflow: hidden;
+}
+main .left_scroll {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: -10px;
+  /* padding: 0 30px; */
+  transition: all 0.2s ease;
+  /* font-family: "Poppins", sans-serif; */
+  
+  border-radius: 50%;
+}
+main .left_scroll::before {
+  position: relative;
+  left: 7px;
+  top: -13px;
+  font-size: 4rem;
+  content: "<";
+  font-family: "Parisienne", cursive;
+}
+main .left_scroll:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* font-size: 4.5rem; */
+  scale: 1.2;
+  /* border: 2px solid firebrick; */
+  cursor: pointer;
+}
+main .right_scroll {
+  position: absolute;
+  /* padding: 0 30px; */
+  width: 50px;
+  height: 50px;
+  right: -10px;
+  /* font-size: 4rem; */
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  /* font-family: "Poppins", sans-serif; */
+  /* font-family: "Parisienne", cursive; */
+}
+main .right_scroll::before {
+  position: relative;
+  left: 13px;
+  top: -13px;
+  font-size: 4rem;
+  content: ">";
+  font-family: "Parisienne", cursive;
+}
+main .right_scroll:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  /* font-size: 4.5rem; */
+  scale: 1.2;
+  /* border: 2px solid firebrick; */
+  cursor: pointer;
+}
+.roller .card1 {
+  background: url(../Images/dish/1.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card-description {
+  height: 55%;
+  width: 100%;
+  /* z-index: -5; */
+  top: 68%;
+  left: 0;
+  position: relative;
+  /* border: 2px solid black; */
+  background-color: rgb(249 80 64);
+  transition: all 0.5s ease;
+  padding: 0 10px;
+  padding-top: 5px;
+}
+
+.card-description > p {
+  font-size: smaller;
+  padding-top: 5px;
+}
+
+.card-description a > p {
+  padding: 5px;
+}
+
+.card-description a {
+  text-decoration: none;
+  /* top: 30px; */
+  color: white;
+  display: inline-block;
+  transition: all 2.5s ease;
+  padding: 5px;
+}
+.card-description a :hover {
+  /* font-size: larger; */
+  color: bisque;
+
+  /* background-color: rgb(60, 56, 56); */
+  border-radius: 5px;
+  /* opacity: 0.5; */
+}
+
+.roller .card:hover .card-description {
+  top: 35%;
+
+  z-index: 2;
+}
+.roller .card2 {
+  background: url(../Images/dish/2.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card3 {
+  background: url(../Images/dish/3.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card4 {
+  background: url(../Images/dish/4.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card5 {
+  background: url(../Images/dish/5.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card6 {
+  background: url(../Images/dish/6.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+.roller .card7 {
+  background: url(../Images/dish/7.jpg);
+  background-size: cover;
+  /* z-index: -1; */
+}
+
+.roller .price {
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 55px;
+  background-color: rgb(249 80 64);
+  /* border-radius: 10px; */
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  z-index: 5;
+  /*set overflow*/
+}
+
+@media only screen and (max-width: 1080px) {
+  #menu {
+    /* background-color: blanchedalmond; */
+    height: auto;
+    padding: 0 10%;
+    padding-top: 8rem;
+    padding-bottom: var(--footer-height);
+    /* overflow: hidden; */
+  }
+
+  .roller {
+    width: 600px;
+  }
+
+  
+  
+}

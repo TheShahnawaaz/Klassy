@@ -1,0 +1,146 @@
+/* Chef */
+
+#chefs {
+  height: 100vh;
+  display: flex;
+  padding: 0 10%;
+  padding-top: var(--navbar-height);
+  padding-bottom: var(--footer-height);
+  background-color: aqua;
+  justify-content: center;
+}
+
+#chefs .chef-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 80%;
+  height: 100%; */
+  /* border: 2px solid black; */
+  overflow: hidden;
+}
+
+.chef-top {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  /* padding: 10% 10%; */
+  background-color: aqua;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.chef-list {
+  height: auto;
+  display: flex;
+  /* flex-direction: column; */
+  padding: 0 10%;
+  align-self: center;
+  /* background-color: aqua; */
+  /* border: 2px solid black; */
+  justify-content: space-between;
+
+  /* width: 100%; */
+  align-items: center;
+}
+
+.chef-list .chef {
+  width: auto;
+  border: 1px solid black;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3%;
+  /* border: 1px solid white; */
+  justify-content: center;
+}
+
+.chef-list img {
+  width: 300px;
+  height: 300px;
+  border-radius: 3%;
+  /* opacity: 0; */
+
+  padding: 5px;
+}
+.chef {
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.chef-list .chef:hover img {
+  /* opacity: 1; */
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.chef-list .chef:hover {
+  margin: 0 30px;
+  scale: 1.1;
+}
+.chef-list .chef:hover .social {
+  /* opacity: 1; */
+  opacity: 1;
+}
+.social {
+  position: absolute;
+  width: 302px;
+  height: 345px;
+  border-radius: 3%;
+  transform: translateY(3px);
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+  opacity: 0;
+  z-index: 5;
+}
+
+.social .icon {
+  /* color: rgb(131, 38, 38); */
+  /* background-color: antiquewhite; */
+  margin: 10px;
+
+  /* height: 100%; */
+  font-size: 2rem;
+}
+.social .icon:hover img {
+  background-color: white;
+
+  transition: all 0.2s ease;
+  /* background-color: antiquewhite; */
+  margin: 10px;
+
+  /* height: 100%; */
+  scale: 1.2;
+}
+
+.social img {
+  background-color: rgb(166, 167, 171);
+  border-radius: 40%;
+  width: 50px;
+
+  height: 50px;
+  padding: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #chefs {
+    height: auto;
+    padding-top: 8rem;
+    padding-bottom: var(--footer-height);
+  }
+  .chef-list {
+    flex-direction: column;
+  }
+
+  .chef-list img {
+    height: auto;
+  }
+  .social {
+    height: 330px;
+  }
+}
