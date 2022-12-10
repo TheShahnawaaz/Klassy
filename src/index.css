@@ -80,7 +80,9 @@ font-family: 'Ubuntu', sans-serif; */
 h1 {
   /* position: sticky;
   top: 5rem;
+
   left: 100rem; */
+  font-size: 3rem;
   font-family: "Parisienne", cursive;
 }
 

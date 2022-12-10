@@ -9,7 +9,7 @@ export default function Contact() {
       <div id="contact">
         <div className="contact-content">
             <div className="contact-left">
-                <h1>CONTACT US</h1>
+                <h1>Contact Us</h1>
                 <div className="heading">
                     Here You Can Make A Reservation Or Just walkin to our cafe
                 </div>
